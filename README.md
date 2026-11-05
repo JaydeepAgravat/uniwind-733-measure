@@ -71,7 +71,7 @@ SHA-256 of the builds:
 
 ## The fix in short
 
-Each style rule now carries the names of the `data-*` attributes it reads. For each class string, Uniwind collects those names once. It then adds those props' values to the cache key, normalized the way the generated match functions compare them: `true` and `"true"` count as the same, and number `1` and string `"1"` stay different. Then it caches the result like any other style. Details are in the PR for #733.
+Each style rule now carries the names of the `data-*` attributes it reads. For each class string, Uniwind collects those names once. It then adds those props' values to the cache key, normalized the way the generated match functions compare them: `true` and `"true"` count as the same, and number `1` and string `"1"` stay different. Then it caches the result like any other style. Details are in [uni-stack/uniwind#764](https://github.com/uni-stack/uniwind/pull/764).
 
 ## License
 
