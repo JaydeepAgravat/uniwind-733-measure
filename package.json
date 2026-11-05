@@ -1,0 +1,26 @@
+{
+  "name": "uniwind-733-measure",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "expo": "~58.0.12",
+    "expo-status-bar": "~58.0.3",
+    "react": "19.3.0",
+    "react-native": "0.88.0",
+    "tailwindcss": "4.3.3",
+    "uniwind": "file:./builds/uniwind-main.tgz"
+  },
+  "devDependencies": {
+    "@types/react": "~19.3.0",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "use:main": "npm install --no-save ./builds/uniwind-main.tgz",
+    "use:fix": "npm install --no-save ./builds/uniwind-fix.tgz",
+    "start": "expo start --no-dev --minify --clear",
+    "ios": "expo start --ios --no-dev --minify --clear",
+    "android": "expo start --android --no-dev --minify --clear"
+  },
+  "private": true,
+  "description": "Measures uniwind#733 (caching data-[] styles on native) with the original build vs the fix, based on harveyappleton/uniwind-data-attr-repro"
+}
